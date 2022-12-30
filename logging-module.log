@@ -1,0 +1,645 @@
+2022-12-30T11:50:51.347+03:00  INFO 85977 --- [main] com.dunice.project.ProjectApplication    : Starting ProjectApplication using Java 19.0.1 with PID 85977 (/home/dunice/Документы/project/build/classes/java/main started by dunice in /home/dunice/Документы/project)
+2022-12-30T11:50:51.350+03:00  INFO 85977 --- [main] com.dunice.project.ProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T11:50:52.124+03:00  INFO 85977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T11:50:52.150+03:00  INFO 85977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2022-12-30T11:50:52.975+03:00  INFO 85977 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-30T11:50:52.987+03:00  INFO 85977 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30T11:50:52.988+03:00  INFO 85977 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-30T11:50:53.080+03:00  INFO 85977 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30T11:50:53.080+03:00  INFO 85977 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1683 ms
+2022-12-30T11:50:53.300+03:00  INFO 85977 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2022-12-30T11:50:53.300+03:00  INFO 85977 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2022-12-30T11:50:53.300+03:00  INFO 85977 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2022-12-30T11:50:53.309+03:00  INFO 85977 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T11:50:53.590+03:00  INFO 85977 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16f7f59f
+2022-12-30T11:50:53.592+03:00  INFO 85977 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T11:50:53.610+03:00  INFO 85977 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/todo (PostgreSQL 12.12)
+2022-12-30T11:50:53.639+03:00  INFO 85977 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.011s)
+2022-12-30T11:50:53.640+03:00  WARN 85977 --- [main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2022-12-30T11:50:53.677+03:00  INFO 85977 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-12-30T11:50:53.679+03:00  INFO 85977 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-30T11:50:53.792+03:00  INFO 85977 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-30T11:50:53.850+03:00  INFO 85977 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2022-12-30T11:50:54.036+03:00  WARN 85977 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-30T11:50:54.200+03:00  INFO 85977 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-12-30T11:50:54.938+03:00  INFO 85977 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-30T11:50:54.947+03:00  INFO 85977 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T11:50:55.091+03:00  WARN 85977 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-30T11:50:55.147+03:00  WARN 85977 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T11:50:55.296+03:00  WARN 85977 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T11:50:55.813+03:00  INFO 85977 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6f071d0c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@138d978e, org.springframework.security.web.context.SecurityContextHolderFilter@3dc14f80, org.springframework.security.web.header.HeaderWriterFilter@1a48a582, org.springframework.security.web.csrf.CsrfFilter@55300b93, org.springframework.security.web.authentication.logout.LogoutFilter@75b4db22, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57466fb7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3b9a2629, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@357e7113, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ef7faa9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b901f7b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8d23cd8, org.springframework.security.web.access.ExceptionTranslationFilter@57abe94d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f2169e9]
+2022-12-30T11:50:56.175+03:00  INFO 85977 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-30T11:50:56.187+03:00  INFO 85977 --- [main] com.dunice.project.ProjectApplication    : Started ProjectApplication in 5.458 seconds (process running for 6.549)
+2022-12-30T11:51:28.200+03:00  INFO 85977 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-30T11:51:28.201+03:00  INFO 85977 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-30T11:51:28.203+03:00  INFO 85977 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-30T11:51:28.752+03:00  INFO 85977 --- [http-nio-8080-exec-2] logging-module                           : {"duration":157,"methodName":"AuthController:authUser","packageName":"com.dunice.project.controller","userId":"not_defined","layer":"API","status":"SUCCESS"}
+2022-12-30T11:52:47.571+03:00  INFO 85977 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T11:52:47.576+03:00  INFO 85977 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T11:52:47.599+03:00  INFO 85977 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-30T11:52:53.510+03:00  INFO 86278 --- [main] com.dunice.project.ProjectApplication    : Starting ProjectApplication using Java 19.0.1 with PID 86278 (/home/dunice/Документы/project/build/classes/java/main started by dunice in /home/dunice/Документы/project)
+2022-12-30T11:52:53.514+03:00  INFO 86278 --- [main] com.dunice.project.ProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T11:52:54.407+03:00  INFO 86278 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T11:52:54.434+03:00  INFO 86278 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2022-12-30T11:52:55.474+03:00  INFO 86278 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-30T11:52:55.488+03:00  INFO 86278 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30T11:52:55.488+03:00  INFO 86278 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-30T11:52:55.587+03:00  INFO 86278 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30T11:52:55.587+03:00  INFO 86278 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2001 ms
+2022-12-30T11:52:55.804+03:00  INFO 86278 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2022-12-30T11:52:55.804+03:00  INFO 86278 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2022-12-30T11:52:55.804+03:00  INFO 86278 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2022-12-30T11:52:55.814+03:00  INFO 86278 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T11:52:56.167+03:00  INFO 86278 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5175d9ad
+2022-12-30T11:52:56.172+03:00  INFO 86278 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T11:52:56.208+03:00  INFO 86278 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/todo (PostgreSQL 12.12)
+2022-12-30T11:52:56.251+03:00  INFO 86278 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.022s)
+2022-12-30T11:52:56.252+03:00  WARN 86278 --- [main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2022-12-30T11:52:56.297+03:00  INFO 86278 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-12-30T11:52:56.300+03:00  INFO 86278 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-30T11:52:56.421+03:00  INFO 86278 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-30T11:52:56.481+03:00  INFO 86278 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2022-12-30T11:52:56.695+03:00  WARN 86278 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-30T11:52:56.870+03:00  INFO 86278 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-12-30T11:52:57.611+03:00  INFO 86278 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-30T11:52:57.621+03:00  INFO 86278 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T11:52:57.769+03:00  WARN 86278 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-30T11:52:57.814+03:00  WARN 86278 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T11:52:57.960+03:00  WARN 86278 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T11:52:58.477+03:00  INFO 86278 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6778636f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dbf8cfc, org.springframework.security.web.context.SecurityContextHolderFilter@63053b71, org.springframework.security.web.header.HeaderWriterFilter@4aadf144, org.springframework.security.web.csrf.CsrfFilter@2809e38a, org.springframework.security.web.authentication.logout.LogoutFilter@58c16efd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f6e3b67, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@18c26588, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@26c1244c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65f3f9e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@394950ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e76134d, org.springframework.security.web.access.ExceptionTranslationFilter@6b6939e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35e3f3b8]
+2022-12-30T11:52:58.901+03:00  INFO 86278 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-30T11:52:58.913+03:00  INFO 86278 --- [main] com.dunice.project.ProjectApplication    : Started ProjectApplication in 6.663 seconds (process running for 7.989)
+2022-12-30T11:53:02.898+03:00  INFO 86278 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-30T11:53:02.899+03:00  INFO 86278 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-30T11:53:02.900+03:00  INFO 86278 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-30T11:53:03.059+03:00 ERROR 86278 --- [http-nio-8080-exec-2] logging-module                           : {"duration":57,"stacktrace":"com.dunice.project.exeption.CustomException: Must not be null\n\tat com.dunice.project.controller.AuthController.authUser(AuthController.java:22)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:578)\n\tat org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)\n\tat org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)\n\tat org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)\n\tat org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)\n\tat org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)\n\tat org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)\n\tat com.dunice.project.controller.AuthController$$SpringCGLIB$$0.authUser(<generated>)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:578)\n\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)\n\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)\n\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)\n\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\n\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1010)\n\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:902)\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:884)\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)\n\tat org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:117)\n\tat org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)\n\tat org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:188)\n\tat org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:174)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)\n\tat org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)\n\tat org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:116)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)\n\tat org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)\n\tat org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)\n\tat org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)\n\tat org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:351)\n\tat org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\n\tat java.base/java.lang.Thread.run(Thread.java:1589)\n","methodName":"AuthController:authUser","packageName":"com.dunice.project.controller","params":"[]","error":"Must not be null","userId":"not_defined","layer":"API","status":"FAILED"}
+2022-12-30T11:54:48.588+03:00  INFO 86278 --- [SpringApplicationShutdownHook] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-30T11:54:48.621+03:00  INFO 86278 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T11:54:48.625+03:00  INFO 86278 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T11:54:48.658+03:00  INFO 86278 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-30T11:54:54.099+03:00  INFO 86598 --- [main] com.dunice.project.ProjectApplication    : Starting ProjectApplication using Java 19.0.1 with PID 86598 (/home/dunice/Документы/project/build/classes/java/main started by dunice in /home/dunice/Документы/project)
+2022-12-30T11:54:54.116+03:00  INFO 86598 --- [main] com.dunice.project.ProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T11:54:56.142+03:00  INFO 86598 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T11:54:56.307+03:00  INFO 86598 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 0 JPA repository interfaces.
+2022-12-30T11:54:57.474+03:00  INFO 86598 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-30T11:54:57.486+03:00  INFO 86598 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30T11:54:57.487+03:00  INFO 86598 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-30T11:54:57.605+03:00  INFO 86598 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30T11:54:57.608+03:00  INFO 86598 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3263 ms
+2022-12-30T11:54:58.004+03:00  INFO 86598 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2022-12-30T11:54:58.005+03:00  INFO 86598 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2022-12-30T11:54:58.005+03:00  INFO 86598 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2022-12-30T11:54:58.015+03:00  INFO 86598 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T11:54:58.567+03:00  INFO 86598 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ea930eb
+2022-12-30T11:54:58.570+03:00  INFO 86598 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T11:54:58.590+03:00  INFO 86598 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/todo (PostgreSQL 12.12)
+2022-12-30T11:54:58.635+03:00  INFO 86598 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.013s)
+2022-12-30T11:54:58.636+03:00  WARN 86598 --- [main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2022-12-30T11:54:58.674+03:00  INFO 86598 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-12-30T11:54:58.675+03:00  INFO 86598 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-30T11:54:58.890+03:00  INFO 86598 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-30T11:54:58.962+03:00  INFO 86598 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2022-12-30T11:54:59.177+03:00  WARN 86598 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-30T11:54:59.347+03:00  INFO 86598 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-12-30T11:55:00.083+03:00  INFO 86598 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-30T11:55:00.094+03:00  INFO 86598 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T11:55:00.225+03:00  WARN 86598 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-30T11:55:00.265+03:00  WARN 86598 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T11:55:00.404+03:00  WARN 86598 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T11:55:00.905+03:00  INFO 86598 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1aea759d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2eb03908, org.springframework.security.web.context.SecurityContextHolderFilter@51eafec0, org.springframework.security.web.header.HeaderWriterFilter@64f49b3, org.springframework.security.web.csrf.CsrfFilter@71e89a26, org.springframework.security.web.authentication.logout.LogoutFilter@2bed5828, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6075a4ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4b45c8e4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5ead245, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@135a8808, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57abe94d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e49a77e, org.springframework.security.web.access.ExceptionTranslationFilter@775a5a67, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3976910]
+2022-12-30T11:55:01.304+03:00  INFO 86598 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-30T11:55:01.319+03:00  INFO 86598 --- [main] com.dunice.project.ProjectApplication    : Started ProjectApplication in 9.698 seconds (process running for 11.392)
+2022-12-30T12:02:42.534+03:00  INFO 86598 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T12:02:42.537+03:00  INFO 86598 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T12:02:42.553+03:00  INFO 86598 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-30T12:02:45.582+03:00  INFO 87103 --- [main] com.dunice.project.ProjectApplication    : Starting ProjectApplication using Java 19.0.1 with PID 87103 (/home/dunice/Документы/project/build/classes/java/main started by dunice in /home/dunice/Документы/project)
+2022-12-30T12:02:45.584+03:00  INFO 87103 --- [main] com.dunice.project.ProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T12:02:46.372+03:00  INFO 87103 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T12:02:46.453+03:00  INFO 87103 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2022-12-30T12:02:47.247+03:00  INFO 87103 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-30T12:02:47.257+03:00  INFO 87103 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30T12:02:47.258+03:00  INFO 87103 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-30T12:02:47.336+03:00  INFO 87103 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30T12:02:47.337+03:00  INFO 87103 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1708 ms
+2022-12-30T12:02:47.539+03:00  INFO 87103 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2022-12-30T12:02:47.539+03:00  INFO 87103 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2022-12-30T12:02:47.539+03:00  INFO 87103 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2022-12-30T12:02:47.548+03:00  INFO 87103 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T12:02:47.806+03:00  INFO 87103 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e0d1dc4
+2022-12-30T12:02:47.808+03:00  INFO 87103 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T12:02:47.824+03:00  INFO 87103 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/todo (PostgreSQL 12.12)
+2022-12-30T12:02:47.858+03:00  INFO 87103 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.017s)
+2022-12-30T12:02:47.897+03:00  INFO 87103 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-12-30T12:02:47.910+03:00  INFO 87103 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "001 - USER DB"
+2022-12-30T12:02:47.932+03:00 ERROR 87103 --- [main] o.f.core.internal.command.DbMigrate      : Migration of schema "public" to version "001 - USER DB" failed! Changes successfully rolled back.
+2022-12-30T12:02:47.940+03:00  WARN 87103 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V001__USER_DB.sql failed
+----------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: syntax error at or near ")"
+  Позиция: 190
+Location   : db/migration/V001__USER_DB.sql (/home/dunice/Документы/project/build/resources/main/db/migration/V001__USER_DB.sql)
+Line       : 3
+Statement  : create table users (
+    id uuid primary key,
+    avatar varchar(255),
+    email varchar(255) unique not null,
+    name1 varchar(255),
+    password varchar(255),
+    role varchar(255),
+    )
+
+2022-12-30T12:02:47.941+03:00  INFO 87103 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T12:02:47.963+03:00  INFO 87103 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-30T12:02:47.969+03:00  INFO 87103 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-30T12:02:47.984+03:00  INFO 87103 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2022-12-30T12:02:48.003+03:00 ERROR 87103 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V001__USER_DB.sql failed
+----------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: syntax error at or near ")"
+  Позиция: 190
+Location   : db/migration/V001__USER_DB.sql (/home/dunice/Документы/project/build/resources/main/db/migration/V001__USER_DB.sql)
+Line       : 3
+Statement  : create table users (
+    id uuid primary key,
+    avatar varchar(255),
+    email varchar(255) unique not null,
+    name1 varchar(255),
+    password varchar(255),
+    role varchar(255),
+    )
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.dunice.project.ProjectApplication.main(ProjectApplication.java:10)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V001__USER_DB.sql failed
+----------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: syntax error at or near ")"
+  Позиция: 190
+Location   : db/migration/V001__USER_DB.sql (/home/dunice/Документы/project/build/resources/main/db/migration/V001__USER_DB.sql)
+Line       : 3
+Statement  : create table users (
+    id uuid primary key,
+    avatar varchar(255),
+    email varchar(255) unique not null,
+    name1 varchar(255),
+    password varchar(255),
+    role varchar(255),
+    )
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:384)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:274)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:273)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:246)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:141)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.lambda$execute$0(PostgreSQLAdvisoryLockTemplate.java:56)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:56)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:143)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:98)
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:176)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V001__USER_DB.sql failed
+----------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: syntax error at or near ")"
+  Позиция: 190
+Location   : db/migration/V001__USER_DB.sql (/home/dunice/Документы/project/build/resources/main/db/migration/V001__USER_DB.sql)
+Line       : 3
+Statement  : create table users (
+    id uuid primary key,
+    avatar varchar(255),
+    email varchar(255) unique not null,
+    name1 varchar(255),
+    password varchar(255),
+    role varchar(255),
+    )
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:275)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:376)
+	... 37 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near ")"
+  Позиция: 190
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210)
+	... 43 common frames omitted
+
+2022-12-30T12:04:19.608+03:00  INFO 87296 --- [main] com.dunice.project.ProjectApplication    : Starting ProjectApplication using Java 19.0.1 with PID 87296 (/home/dunice/Документы/project/build/classes/java/main started by dunice in /home/dunice/Документы/project)
+2022-12-30T12:04:19.611+03:00  INFO 87296 --- [main] com.dunice.project.ProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T12:04:20.507+03:00  INFO 87296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T12:04:20.572+03:00  INFO 87296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2022-12-30T12:04:21.350+03:00  INFO 87296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-30T12:04:21.359+03:00  INFO 87296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30T12:04:21.359+03:00  INFO 87296 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-30T12:04:21.436+03:00  INFO 87296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30T12:04:21.436+03:00  INFO 87296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1777 ms
+2022-12-30T12:04:21.644+03:00  INFO 87296 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2022-12-30T12:04:21.644+03:00  INFO 87296 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2022-12-30T12:04:21.644+03:00  INFO 87296 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2022-12-30T12:04:21.652+03:00  INFO 87296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T12:04:21.906+03:00  INFO 87296 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6bce4140
+2022-12-30T12:04:21.908+03:00  INFO 87296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T12:04:21.925+03:00  INFO 87296 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/todo (PostgreSQL 12.12)
+2022-12-30T12:04:21.962+03:00  INFO 87296 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.020s)
+2022-12-30T12:04:22.000+03:00  INFO 87296 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-12-30T12:04:22.013+03:00  INFO 87296 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "001 - USER DB"
+2022-12-30T12:04:22.031+03:00 ERROR 87296 --- [main] o.f.core.internal.command.DbMigrate      : Migration of schema "public" to version "001 - USER DB" failed! Changes successfully rolled back.
+2022-12-30T12:04:22.037+03:00  WARN 87296 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V001__USER_DB.sql failed
+----------------------------------
+SQL State  : 42P07
+Error Code : 0
+Message    : ERROR: relation "users" already exists
+Location   : db/migration/V001__USER_DB.sql (/home/dunice/Документы/project/build/resources/main/db/migration/V001__USER_DB.sql)
+Line       : 3
+Statement  : create table users (
+    id uuid primary key,
+    avatar varchar(255),
+    email varchar(255) unique,
+    name1 varchar(255),
+    password varchar(255),
+    role varchar(255)
+    )
+
+2022-12-30T12:04:22.037+03:00  INFO 87296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T12:04:22.072+03:00  INFO 87296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-30T12:04:22.076+03:00  INFO 87296 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-30T12:04:22.092+03:00  INFO 87296 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2022-12-30T12:04:22.114+03:00 ERROR 87296 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V001__USER_DB.sql failed
+----------------------------------
+SQL State  : 42P07
+Error Code : 0
+Message    : ERROR: relation "users" already exists
+Location   : db/migration/V001__USER_DB.sql (/home/dunice/Документы/project/build/resources/main/db/migration/V001__USER_DB.sql)
+Line       : 3
+Statement  : create table users (
+    id uuid primary key,
+    avatar varchar(255),
+    email varchar(255) unique,
+    name1 varchar(255),
+    password varchar(255),
+    role varchar(255)
+    )
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.dunice.project.ProjectApplication.main(ProjectApplication.java:10)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V001__USER_DB.sql failed
+----------------------------------
+SQL State  : 42P07
+Error Code : 0
+Message    : ERROR: relation "users" already exists
+Location   : db/migration/V001__USER_DB.sql (/home/dunice/Документы/project/build/resources/main/db/migration/V001__USER_DB.sql)
+Line       : 3
+Statement  : create table users (
+    id uuid primary key,
+    avatar varchar(255),
+    email varchar(255) unique,
+    name1 varchar(255),
+    password varchar(255),
+    role varchar(255)
+    )
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:384)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:274)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:273)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:246)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:141)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.lambda$execute$0(PostgreSQLAdvisoryLockTemplate.java:56)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:56)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:143)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:98)
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:176)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V001__USER_DB.sql failed
+----------------------------------
+SQL State  : 42P07
+Error Code : 0
+Message    : ERROR: relation "users" already exists
+Location   : db/migration/V001__USER_DB.sql (/home/dunice/Документы/project/build/resources/main/db/migration/V001__USER_DB.sql)
+Line       : 3
+Statement  : create table users (
+    id uuid primary key,
+    avatar varchar(255),
+    email varchar(255) unique,
+    name1 varchar(255),
+    password varchar(255),
+    role varchar(255)
+    )
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:275)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:376)
+	... 37 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "users" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210)
+	... 43 common frames omitted
+
+2022-12-30T12:05:52.459+03:00  INFO 87473 --- [main] com.dunice.project.ProjectApplication    : Starting ProjectApplication using Java 19.0.1 with PID 87473 (/home/dunice/Документы/project/build/classes/java/main started by dunice in /home/dunice/Документы/project)
+2022-12-30T12:05:52.462+03:00  INFO 87473 --- [main] com.dunice.project.ProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T12:05:53.437+03:00  INFO 87473 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T12:05:53.526+03:00  INFO 87473 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
+2022-12-30T12:05:54.300+03:00  INFO 87473 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-30T12:05:54.310+03:00  INFO 87473 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30T12:05:54.310+03:00  INFO 87473 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-30T12:05:54.390+03:00  INFO 87473 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30T12:05:54.390+03:00  INFO 87473 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1865 ms
+2022-12-30T12:05:54.584+03:00  INFO 87473 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2022-12-30T12:05:54.585+03:00  INFO 87473 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2022-12-30T12:05:54.585+03:00  INFO 87473 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2022-12-30T12:05:54.593+03:00  INFO 87473 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T12:05:54.841+03:00  INFO 87473 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3dfd7eaa
+2022-12-30T12:05:54.843+03:00  INFO 87473 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T12:05:54.860+03:00  INFO 87473 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/todo (PostgreSQL 12.12)
+2022-12-30T12:05:54.895+03:00  INFO 87473 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.019s)
+2022-12-30T12:05:54.933+03:00  INFO 87473 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2022-12-30T12:05:54.954+03:00  INFO 87473 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "001 - USER DB"
+2022-12-30T12:05:54.995+03:00  INFO 87473 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v001 (execution time 00:00.068s)
+2022-12-30T12:05:55.108+03:00  INFO 87473 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-30T12:05:55.156+03:00  INFO 87473 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2022-12-30T12:05:55.308+03:00  WARN 87473 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-30T12:05:55.474+03:00  INFO 87473 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-12-30T12:05:56.188+03:00  INFO 87473 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-30T12:05:56.198+03:00  INFO 87473 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T12:05:56.301+03:00  WARN 87473 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-30T12:05:56.340+03:00  WARN 87473 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T12:05:56.491+03:00  WARN 87473 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T12:05:57.004+03:00  INFO 87473 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@54fffa5a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@407d2a01, org.springframework.security.web.context.SecurityContextHolderFilter@11fb1691, org.springframework.security.web.header.HeaderWriterFilter@5cea47a1, org.springframework.security.web.csrf.CsrfFilter@77aeba9b, org.springframework.security.web.authentication.logout.LogoutFilter@4028aab2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d0d568f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3f5e64c9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@461b38ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@215404a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@391b03b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1387bd84, org.springframework.security.web.access.ExceptionTranslationFilter@1d7d968c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5192b301]
+2022-12-30T12:05:57.582+03:00  INFO 87473 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-30T12:05:57.591+03:00  INFO 87473 --- [main] com.dunice.project.ProjectApplication    : Started ProjectApplication in 5.745 seconds (process running for 6.738)
+2022-12-30T12:07:34.560+03:00  INFO 87473 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T12:07:34.562+03:00  INFO 87473 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T12:07:34.578+03:00  INFO 87473 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-30T12:07:37.840+03:00  INFO 87744 --- [main] com.dunice.project.ProjectApplication    : Starting ProjectApplication using Java 19.0.1 with PID 87744 (/home/dunice/Документы/project/build/classes/java/main started by dunice in /home/dunice/Документы/project)
+2022-12-30T12:07:37.844+03:00  INFO 87744 --- [main] com.dunice.project.ProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T12:07:38.674+03:00  INFO 87744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T12:07:38.742+03:00  INFO 87744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2022-12-30T12:07:39.584+03:00  INFO 87744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-30T12:07:39.595+03:00  INFO 87744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30T12:07:39.595+03:00  INFO 87744 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-30T12:07:39.684+03:00  INFO 87744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30T12:07:39.684+03:00  INFO 87744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1744 ms
+2022-12-30T12:07:39.890+03:00  INFO 87744 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2022-12-30T12:07:39.890+03:00  INFO 87744 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2022-12-30T12:07:39.890+03:00  INFO 87744 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2022-12-30T12:07:39.899+03:00  INFO 87744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T12:07:40.169+03:00  INFO 87744 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6aff97d6
+2022-12-30T12:07:40.171+03:00  INFO 87744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T12:07:40.190+03:00  INFO 87744 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/todo (PostgreSQL 12.12)
+2022-12-30T12:07:40.233+03:00  INFO 87744 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.022s)
+2022-12-30T12:07:40.270+03:00  INFO 87744 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 001
+2022-12-30T12:07:40.271+03:00  INFO 87744 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-30T12:07:40.383+03:00  INFO 87744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-30T12:07:40.435+03:00  INFO 87744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2022-12-30T12:07:40.592+03:00  WARN 87744 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-30T12:07:40.755+03:00  INFO 87744 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-12-30T12:07:41.480+03:00  INFO 87744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-30T12:07:41.491+03:00  INFO 87744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T12:07:41.605+03:00  WARN 87744 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-30T12:07:41.646+03:00  WARN 87744 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T12:07:41.785+03:00  WARN 87744 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T12:07:42.281+03:00  INFO 87744 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b37d1a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34114276, org.springframework.security.web.context.SecurityContextHolderFilter@52ab003b, org.springframework.security.web.header.HeaderWriterFilter@7e27b77a, org.springframework.security.web.csrf.CsrfFilter@55c581e4, org.springframework.security.web.authentication.logout.LogoutFilter@1db5de29, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22561412, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3e755d5f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@73c6ae15, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c1c0892, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1771d6a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5923210, org.springframework.security.web.access.ExceptionTranslationFilter@5ee95d42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6500e886]
+2022-12-30T12:07:42.881+03:00  INFO 87744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-30T12:07:42.891+03:00  INFO 87744 --- [main] com.dunice.project.ProjectApplication    : Started ProjectApplication in 5.741 seconds (process running for 6.8)
+2022-12-30T12:07:48.838+03:00  INFO 87744 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T12:07:48.840+03:00  INFO 87744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T12:07:48.857+03:00  INFO 87744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-30T12:07:52.916+03:00  INFO 87938 --- [main] com.dunice.project.ProjectApplication    : Starting ProjectApplication using Java 19.0.1 with PID 87938 (/home/dunice/Документы/project/build/classes/java/main started by dunice in /home/dunice/Документы/project)
+2022-12-30T12:07:52.921+03:00  INFO 87938 --- [main] com.dunice.project.ProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T12:07:53.802+03:00  INFO 87938 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T12:07:53.859+03:00  INFO 87938 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2022-12-30T12:07:54.606+03:00  INFO 87938 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-30T12:07:54.624+03:00  INFO 87938 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30T12:07:54.624+03:00  INFO 87938 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-30T12:07:54.703+03:00  INFO 87938 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30T12:07:54.703+03:00  INFO 87938 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1687 ms
+2022-12-30T12:07:54.892+03:00  INFO 87938 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2022-12-30T12:07:54.893+03:00  INFO 87938 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2022-12-30T12:07:54.893+03:00  INFO 87938 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2022-12-30T12:07:54.902+03:00  INFO 87938 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T12:07:55.159+03:00  INFO 87938 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e0d1dc4
+2022-12-30T12:07:55.161+03:00  INFO 87938 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T12:07:55.185+03:00  INFO 87938 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/todo (PostgreSQL 12.12)
+2022-12-30T12:07:55.237+03:00  WARN 87938 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 001
+-> Applied to database : -775014591
+-> Resolved locally    : -762931024
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2022-12-30T12:07:55.238+03:00  INFO 87938 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T12:07:55.241+03:00  INFO 87938 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-30T12:07:55.244+03:00  INFO 87938 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-30T12:07:55.257+03:00  INFO 87938 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2022-12-30T12:07:55.274+03:00 ERROR 87938 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 001
+-> Applied to database : -775014591
+-> Resolved locally    : -762931024
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.dunice.project.ProjectApplication.main(ProjectApplication.java:10)
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 001
+-> Applied to database : -775014591
+-> Resolved locally    : -762931024
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:134)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 18 common frames omitted
+
+2022-12-30T12:15:45.092+03:00  INFO 88760 --- [main] com.dunice.project.ProjectApplication    : Starting ProjectApplication using Java 19.0.1 with PID 88760 (/home/dunice/Документы/project/build/classes/java/main started by dunice in /home/dunice/Документы/project)
+2022-12-30T12:15:45.095+03:00  INFO 88760 --- [main] com.dunice.project.ProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T12:15:45.881+03:00  INFO 88760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T12:15:45.956+03:00  INFO 88760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interfaces.
+2022-12-30T12:15:46.715+03:00  INFO 88760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-30T12:15:46.726+03:00  INFO 88760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30T12:15:46.726+03:00  INFO 88760 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-30T12:15:46.804+03:00  INFO 88760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30T12:15:46.804+03:00  INFO 88760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1629 ms
+2022-12-30T12:15:46.996+03:00  INFO 88760 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2022-12-30T12:15:46.997+03:00  INFO 88760 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2022-12-30T12:15:46.997+03:00  INFO 88760 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2022-12-30T12:15:47.007+03:00  INFO 88760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T12:15:47.278+03:00  INFO 88760 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19002b34
+2022-12-30T12:15:47.280+03:00  INFO 88760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T12:15:47.297+03:00  INFO 88760 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/todo (PostgreSQL 12.12)
+2022-12-30T12:15:47.337+03:00  INFO 88760 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.021s)
+2022-12-30T12:15:47.377+03:00  INFO 88760 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 001
+2022-12-30T12:15:47.378+03:00  INFO 88760 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-30T12:15:47.478+03:00  INFO 88760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-30T12:15:47.535+03:00  INFO 88760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2022-12-30T12:15:47.701+03:00  WARN 88760 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-30T12:15:47.860+03:00  INFO 88760 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-12-30T12:15:48.547+03:00  INFO 88760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-30T12:15:48.557+03:00  INFO 88760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T12:15:48.667+03:00  WARN 88760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-30T12:15:48.706+03:00  WARN 88760 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T12:15:48.852+03:00  WARN 88760 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T12:15:49.351+03:00  INFO 88760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3889c343, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34be7efb, org.springframework.security.web.context.SecurityContextHolderFilter@72b6fa98, org.springframework.security.web.header.HeaderWriterFilter@3b3a3a92, org.springframework.security.web.csrf.CsrfFilter@64cec4d0, org.springframework.security.web.authentication.logout.LogoutFilter@3e755d5f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66f223fa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@f245168, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@136cad3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6693818c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4281a26f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13e5b262, org.springframework.security.web.access.ExceptionTranslationFilter@eaa07bb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@200e6029]
+2022-12-30T12:15:49.949+03:00  INFO 88760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-30T12:15:49.961+03:00  INFO 88760 --- [main] com.dunice.project.ProjectApplication    : Started ProjectApplication in 5.44 seconds (process running for 6.415)
+2022-12-30T12:16:05.809+03:00  INFO 88760 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T12:16:05.812+03:00  INFO 88760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T12:16:05.832+03:00  INFO 88760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-30T12:16:09.400+03:00  INFO 89008 --- [main] com.dunice.project.ProjectApplication    : Starting ProjectApplication using Java 19.0.1 with PID 89008 (/home/dunice/Документы/project/build/classes/java/main started by dunice in /home/dunice/Документы/project)
+2022-12-30T12:16:09.403+03:00  INFO 89008 --- [main] com.dunice.project.ProjectApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T12:16:10.068+03:00  INFO 89008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T12:16:10.126+03:00  INFO 89008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2022-12-30T12:16:10.913+03:00  INFO 89008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-30T12:16:10.923+03:00  INFO 89008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-30T12:16:10.923+03:00  INFO 89008 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-30T12:16:11.000+03:00  INFO 89008 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-30T12:16:11.001+03:00  INFO 89008 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1547 ms
+2022-12-30T12:16:11.183+03:00  INFO 89008 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2022-12-30T12:16:11.183+03:00  INFO 89008 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2022-12-30T12:16:11.183+03:00  INFO 89008 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2022-12-30T12:16:11.191+03:00  INFO 89008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T12:16:11.462+03:00  INFO 89008 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5463f035
+2022-12-30T12:16:11.464+03:00  INFO 89008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T12:16:11.481+03:00  INFO 89008 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/todo (PostgreSQL 12.12)
+2022-12-30T12:16:11.520+03:00  INFO 89008 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.021s)
+2022-12-30T12:16:11.561+03:00  INFO 89008 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 001
+2022-12-30T12:16:11.561+03:00  INFO 89008 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2022-12-30T12:16:11.665+03:00  INFO 89008 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-30T12:16:11.740+03:00  INFO 89008 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2022-12-30T12:16:11.926+03:00  WARN 89008 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-30T12:16:12.068+03:00  INFO 89008 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-12-30T12:16:12.781+03:00  INFO 89008 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-30T12:16:12.791+03:00  INFO 89008 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T12:16:12.907+03:00  WARN 89008 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-30T12:16:12.958+03:00  WARN 89008 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T12:16:13.093+03:00  WARN 89008 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2022-12-30T12:16:13.597+03:00  INFO 89008 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4280b20b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50e4d8cd, org.springframework.security.web.context.SecurityContextHolderFilter@6a30f6b1, org.springframework.security.web.header.HeaderWriterFilter@52b32622, org.springframework.security.web.csrf.CsrfFilter@24888d8b, org.springframework.security.web.authentication.logout.LogoutFilter@3b18009f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5a941fb4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@37dc7661, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4b37d1a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52ab003b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1174e173, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34114276, org.springframework.security.web.access.ExceptionTranslationFilter@f245168, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@136cad3e]
+2022-12-30T12:16:14.161+03:00  INFO 89008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-30T12:16:14.171+03:00  INFO 89008 --- [main] com.dunice.project.ProjectApplication    : Started ProjectApplication in 5.359 seconds (process running for 6.437)
+2022-12-30T12:16:17.974+03:00  INFO 89008 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-30T12:16:17.976+03:00  INFO 89008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-30T12:16:17.978+03:00  INFO 89008 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-30T12:16:18.197+03:00 ERROR 89008 --- [http-nio-8080-exec-2] logging-module                           : {"duration":108,"stacktrace":"com.dunice.project.config.exeption.CustomException: Must not be null\n\tat com.dunice.project.controller.AuthController.authUser(AuthController.java:22)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:578)\n\tat org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)\n\tat org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)\n\tat org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)\n\tat org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)\n\tat org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)\n\tat org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)\n\tat com.dunice.project.controller.AuthController$$SpringCGLIB$$0.authUser(<generated>)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:578)\n\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)\n\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)\n\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)\n\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\n\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1010)\n\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:902)\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:884)\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)\n\tat org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:117)\n\tat org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)\n\tat org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:188)\n\tat org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:174)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)\n\tat org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)\n\tat org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:116)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)\n\tat org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)\n\tat org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)\n\tat org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)\n\tat org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)\n\tat org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:351)\n\tat org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\n\tat java.base/java.lang.Thread.run(Thread.java:1589)\n","methodName":"AuthController:authUser","packageName":"com.dunice.project.controller","params":"[]","error":"Must not be null","userId":"not_defined","layer":"API","status":"FAILED"}
+2022-12-30T12:18:02.212+03:00  INFO 89008 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T12:18:02.214+03:00  INFO 89008 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T12:18:02.230+03:00  INFO 89008 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

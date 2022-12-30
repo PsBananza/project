@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <property name="LOGS_HOME" value="./logs/" />
+    <appender name="LOGGING-MODULE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOGS_HOME}logging_module.log</file>
+        <encoder>
+            <pattern>%d [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOGS_HOME}zip/logging_module.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <logger name="guru.springframework.controllers" level="WARN" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </logger>
+    <logger name="logging-module">
+        <appender-ref ref="LOGGING-MODULE"/>
+        <appender-ref ref="LOGGING-MODULE"/>
+    </logger>
+</configuration>
